@@ -4,15 +4,18 @@
     <link rel="stylesheet" href="niit.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
 
 </head>
     
     <body>
         <!--header-->
 <div class="header">
-<div class="header-items logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYZKWk2AQNc45AlAAMprF9ZBe04ZsBYMpDsQ&s"height="80px" width="80px"></div>
+<div class="header-items logo"><img src="https://d2u18tz2v9wox7.cloudfront.net/niit_logo_1_8433afebcc.svg"height="70px" width="70px"></div>
  <div class="header-items" onclick="cou()">Courses<i class="fa-solid fa-angle-down" style="color:gray;"></i></div>
- <div class="header-items"><button class="enquiry enquiry1"><i class="fas fa-phone" style="color: black;"></i></button></div>
+ <div class="header-items"><button class="enquiry enquiry1" onclick="cont()"><i class="fas fa-phone" style="color: black;"></i></button></div>
  <div class="header-items"><button class="enquiry" onclick="enq()">Enquiry</button></div>
 
 
@@ -62,6 +65,10 @@
 <!--small-container close-->
 
 
+
+
+
+
 <!---Enuiry form-->
 
 <div class="enquiry-form" id="formBox">
@@ -108,6 +115,17 @@
 </div>
 
 
+<a href="https://wa.me/91 9891783044" class="whatsapp"
+  class="whatsapp"
+   title="+91 9891783044">
+    <img src="https://static.vecteezy.com/system/resources/previews/021/495/946/original/whatsapp-logo-icon-free-png.png" height="50px" width="50px" alt="WhatsApp">
+</a>
+
+<!-- Call Icon -->
+<a href="tel:+91 9891783044" class="call">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/010/834/908/small_2x/3d-rendering-blue-icon-phone-call-isolated-png.png" height="10px" width="10px" alt="Call">
+</a>
+
 <!---next-->
 <div class="perfect">
 <div class="perfect-items"><button class="power">AI-POWERED RECOMMENDATION</button><br> <span style="font-size: 40px; color: white;  margin-left: 15%; font-weight: bold;">Find your perfect program</span><br> <span style="font-size: 15px; margin-left: 10%; color: rgb(199, 193, 193); font-weight: bold;">Tell us your goals and experience level, and our AI will recommend the right programs.</span></div>
@@ -136,45 +154,25 @@
 
 
 </div>
-<!---next-->
-<button class="explore"><i class="fa-solid fa-book" style="color: rgb(18, 106, 221);"></i>EXPLORE PROGRAM</button>
+
+
+
+<!---Contact form-->
+
+<div class="contact-form" >
+
+<form class="contact-form1" id="formbox1">
     
-<h1 class="our">Explore Our Programs</h1>
-<h6 class="find">Find the right program to build in-demand skills and advance your career.</h6>
+<h4 style="margin-top: 20px;">Create Account</h4>
+<h6 style="font-size: 10px;">Start your learning journey with us.</h6>
 
-<!---serach-->
+    <label style="font-size: 8px; font-weight: bold;">MOBILE NUMBER</label><br>
+    <input type="text" name="mobile"><br><br>
 
-
-<div class="search">
-
-  <div class="search-items"><button style="background-color:white; color: rgb(19, 62, 118); border: 1px solid blue; height: 45px; font-weight:bold; 230px; margin-left: 15px; border-radius: 5px;">
-  GenAi <i class="fa-solid fa-caret-down" style="color: rgb(19, 62, 118);"></i></button><br> <button style="background-color:white; color: rgb(19, 62, 118); border: 1px solid blue; height: 45px;width: 230px; margin-top: -150px; margin-left: 15px; border-radius: 5px;">
-  Software Engineering</button> <br> <button style="background-color:white; color: rgb(19, 62, 118); border: 1px solid blue; height: 45px;width: 230px; margin-top: -300px; margin-left: 15px; border-radius: 5px;">
-  Data Science <i class="fa-solid fa-book" style="color:  rgb(19, 62, 118);"></i></button> <br> <button style="background-color:white; color: rgb(19, 62, 118); border: 1px solid blue; height: 45px;width: 230px; margin-top: -450px; margin-left: 15px; border-radius: 5px;">
- Cybersecurity</button> <br> <button style="background-color:white; color: rgb(19, 62, 118); border: 1px solid blue; height: 45px;width: 230px; margin-top: -425px; margin-left: 15px; border-radius: 5px;">
-Cloud Computing <i class="fa-solid fa-book" style="color: rgb(19, 62, 118);"></i></button> <br> <button style="background-color:white; color: rgb(19, 62, 118); border: 1px solid blue; height: 45px;width: 230px; margin-top: -400px; margin-left: 15px; border-radius: 5px;">
-Digital Marketing</button> <br> <button style="background-color:white; color: rgb(19, 62, 118); border: 1px solid blue; height: 45px;width: 230px; margin-top: -380px; margin-left: 15px; border-radius: 5px;">
- GNIIT</button> <br> <button style="background-color:white; color: rgb(19, 62, 118); border: 1px solid blue; height: 45px;width: 230px; margin-top: -360px; margin-left: 15px; border-radius: 5px;">
-Banking & Finance</button> <br> <button style="background-color:white; color: rgb(19, 62, 118); border: 1px solid blue; height: 45px;width: 230px; margin-top: -340px; margin-left: 15px; border-radius: 5px;">
-  Industry Reconized</button></div>
-
-
-<div class="search-items">
-
-<div class="search1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfsJV0z-DVVg4f2EeGqVGyv9L4648Cif1AtA&s" height="100px" width="200px" style="border-radius: 15px; margin-left: 30px;"><br><button class="cer">CERTIFICATE</button><br><span style="font-size: 12px; margin-top: 130px; margin-left: -20px;  font-weight: bold;">Building Agentic AI Systems <br></span> <br><span style="font-size: 10px; color:gray; margin-top: 170px; margin-left: -60px;  font-weight: bold;">Create and present practical AI projects- from chatbots to agent teams</span></div>
-<div class="search1"></div>
-<div class="search1"></div>
-<div class="search1"></div>
-<div class="search1"></div>
-<div class="search1"></div>
-
+    <button type="submit" style="border-radius: 10px; color: white; background-color: rgb(3, 99, 215); font-size: 15px; border: none; width: 190px; height: 30px;" onclick="get()">GET STARTED</button>
+</form>
 
 </div>
-
-
-
-</div>
-
 
 <!---next-->
 
@@ -186,15 +184,122 @@ Banking & Finance</button> <br> <button style="background-color:white; color: rg
 <!---three div-->
 
 <div class="three">
-<div class="three-box"></div>
-<div class="three-box"></div>
-<div class="three-box"></div>
-<div class="three-box"></div>
-<div class="three-box"></div>
-<div class="three-box"></div>
+<div class="three-box"><img src="https://tse4.mm.bing.net/th/id/OIP.gKx5QzJCw5BgJN_LdrIWcQHaE8?pid=Api&P=0&h=180" height="250px" width="220px" style="border-radius: 15px;"></div>
+<div class="three-box"><br><b style="margin-left: 20px;">Mohan Malhotra</b><br><span  style="color: blue; margin-left: 20px; font-size: 12px;">Data Annovation Analytics</span><br><br><span style="color: rgb(74, 71, 71); font-size: 10px; margin-left: 20px;">The NIIT Group is a leading digital talent development organization, building skilled professionals globally since 1981. Operating in countries, it offers comprehensive learning programs that deliver superior outcomes. The group comprises NIIT Limited (NIIT) and NIIT Learning Systems Limited (NIIT MTS).</span><br><button class="professional">Professional programm in Data Analytics</button></div>
+<div class="three-box"><img src="https://tse2.mm.bing.net/th/id/OIP.B2_jOiOD76aQC0xXPZW7cwHaEK?pid=Api&P=0&h=180" height="250px" width="220px" style="border-radius: 15px;"></div>
+<div class="three-box"><br><b style="margin-left: 20px;">Mohan Malhotra</b><br><span  style="color: blue; margin-left: 20px; font-size: 12px;">Data Annovation Analytics</span><br><br><span style="color: rgb(74, 71, 71); font-size: 10px; margin-left: 20px;">The NIIT Group is a leading digital talent development organization, building skilled professionals globally since 1981. Operating in countries, it offers comprehensive learning programs that deliver superior outcomes. The group comprises NIIT Limited (NIIT) and NIIT Learning Systems Limited (NIIT MTS).</span><br><button class="professional">Professional programm in Data Analytics</button></div>
+<div class="three-box"><br><b style="margin-left: 20px;">Mohan Malhotra</b><br><span  style="color: blue; margin-left: 20px; font-size: 12px;">Data Annovation Analytics</span><br><br><span style="color: rgb(74, 71, 71); font-size: 10px; margin-left: 20px;">The NIIT Group is a leading digital talent development organization, building skilled professionals globally since 1981. Operating in countries, it offers comprehensive learning programs that deliver superior outcomes. The group comprises NIIT Limited (NIIT) and NIIT Learning Systems Limited (NIIT MTS).</span><br><button class="professional">Professional programm in Data Analytics</button></div>
+<div class="three-box"><img src="https://tse3.mm.bing.net/th/id/OIP.VmRVI9hFjFrfQVVTbRa2TAHaE8?pid=Api&P=0&h=180" height="250px" width="220px" style="border-radius: 15px;"></div>
 </div>
 
+
 </div>
+
+<!---next-->
+<div class="blank">
+<button class="explore"><i class="fa-solid fa-book" style="color: rgb(18, 106, 221);"></i>HOW IT WORKS</button>
+    
+<h1 class="our">Your Learning Journey</h1>
+<h6 class="find">very step brings you closer to your future.</h6>
+</div>
+<div class="six">
+<div class="six-box"><img src="https://pluspng.com/img-png/user-png-icon-big-image-png-2240.png" height="30px" width="30px" style="margin-left: 40px; margin-top: 14px;"><br><br><b style="font-size: 10px; margin-left: 15px;">ENROLL</b><br><span style="font-size: 8px; color: rgb(95, 93, 93); margin-left: 15px;">Choose your program and start your learning journey today.</span></div>
+<div class="six-box box1"><img src="https://cdn4.iconfinder.com/data/icons/space-and-astronomy-1/800/rocket-1024.png" height="30px" width="30px" style="margin-left: 40px; margin-top: 14px;"><br><br><b style="font-size: 10px; margin-left: 15px;">GET HIRED</b><br><span style="font-size: 8px; color: rgb(95, 93, 93); margin-left: 15px;">Choose your program and start your learning journey today.</span></div>
+<div class="six-box"><img src="https://pluspng.com/img-png/user-png-icon-big-image-png-2240.png" height="30px" width="30px" style="margin-left: 40px; margin-top: 14px;"><br><br><b style="font-size: 10px; margin-left: 15px;">PRACTICE</b><br><span style="font-size: 8px; color: rgb(95, 93, 93); margin-left: 15px;">Choose your program and start your learning journey today.</span></div>
+<div class="six-box box1"><img src="https://pluspng.com/img-png/user-png-icon-big-image-png-2240.png" height="30px" width="30px" style="margin-left: 40px; margin-top: 14px;"><br><br><b style="font-size: 10px; margin-left: 15px;">ENROLL</b><br><span style="font-size: 8px; color: rgb(95, 93, 93); margin-left: 15px;">Choose your program and start your learning journey today.</span></div>
+<div class="six-box"><img src="https://png.pngtree.com/png-clipart/20191122/original/pngtree-vector-star-icon-png-image_5169247.jpg" height="50px" width="50px" style="margin-left: 40px; margin-top: 14px;"><br><br><b style="font-size: 10px; margin-left: 13px;">LEARN</b><br><span style="font-size: 8px; color: rgb(95, 93, 93); margin-left: 15px;">Choose your program and start your learning journey today.</span></div>
+
+
+</div>
+<div class="future">
+  <button class="future1">Future-Proof Your Career Path</button>
+</div>
+<!---next-->
+
+<button class="explore"><i class="fa-solid fa-book" style="color: rgb(18, 106, 221);"></i>Expert Mentors</button>
+    
+<h1 class="our">Learn from Industry Titans</h1>
+<h6 class="find">Learn from industry experts who are shaping the future of technology with NIIT’s platform.</h6>
+
+<!---three div-->
+
+<div class="three">
+
+<div class="three-box1"><br><b style="margin-left: 20px;">Mohan Malhotra</b><br><span  style="color: blue; margin-left: 20px; font-size: 12px;">Data Annovation Analytics</span><br><br><span style="color: rgb(74, 71, 71); font-size: 10px; margin-left: 20px;">The NIIT Group is a leading digital talent development organization, building skilled professionals globally since 1981. Operating in countries, it offers comprehensive learning programs that deliver superior outcomes. </span><br><button class="professional1"><i class="fa-solid fa-star" style="color: rgb(108, 230, 99);"></i>4.7 (Excellent)</button></div>
+
+<div class="three-box1"><br><b style="margin-left: 20px;">Mohan Malhotra</b><br><span  style="color: blue; margin-left: 20px; font-size: 12px;">Data Annovation Analytics</span><br><br><span style="color: rgb(74, 71, 71); font-size: 10px; margin-left: 20px;">The NIIT Group is a leading digital talent development organization, building skilled professionals globally since 1981. Operating in countries, it offers comprehensive learning programs that deliver superior outcomes.</span><br><button class="professional1"><i class="fa-solid fa-star" style="color: rgb(108, 230, 99);"></i>4.7(Excellent)</button></div>
+<div class="three-box1"><br><b style="margin-left: 20px;">Mohan Malhotra</b><br><span  style="color: blue; margin-left: 20px; font-size: 12px;">Data Annovation Analytics</span><br><br><span style="color: rgb(74, 71, 71); font-size: 10px; margin-left: 20px;">The NIIT Group is a leading digital talent development organization, building skilled professionals globally since 1981. Operating in countries, it offers comprehensive learning programs that deliver superior outcomes.</span><br><button class="professional1"><i class="fa-solid fa-star" style="color: rgb(108, 230, 99);"></i>4.7(Excellent)</button></div>
+
+</div>
+
+
+</div>
+
+<!---next-->
+<div class="blank">
+<button class="explore"><i class="fa-solid fa-book" style="color: rgb(18, 106, 221);"></i>Why Choose NII</button>
+    
+<h1 class="our">The NIIT Advantage</h1>
+<h6 class="find">Industry-aligned, mentor-led learning with hands-on GenAI practice to build job-ready skills.</h6>
+</div>
+
+<div class="card1">
+<div class="card-box"><img src="https://dishadeepan.com/wp-content/uploads/2020/12/1166-scaled.jpg" height="210px" width="300px" style="border-radius: 10px;"></div>
+<div class="card-box"><button class="industry"><b style="font-size: 10px;">Industry-Aligned Curriculum Focused on GenAI</b><br><span style="color: rgb(58, 56, 56); font-size: 10px;">Learn in-demand skills and Generative AI (GenAI) expertise that top companies are hiring for today.</span></button><br><button class="industry"><b style="font-size: 10px;">Data-Driven Program Performance Report</b><br><span style="color: rgb(72, 69, 69); font-size: 10px;">Adaptive learning paths that evolve with your progress, pace, and learning style for better outcomes.</span></button><br><button class="industry"><b style="font-size: 10px;">Industry-Aligned Curriculum Focused on GenAI</b><br><span style="color: rgb(73, 72, 72); font-size: 10px;">Learn in-demand skills and Generative AI (GenAI) expertise that top companies are hiring for today.</span></button></div>
+
+</div>
+
+
+
+
+
+
+<!---next-->
+<div class="blank1">
+<button class="explore"><i class="fa-solid fa-book" style="color: rgb(18, 106, 221);"></i>Why Choose NII</button>
+    
+<h1 class="our">Delivering Real Career Growth</h1>
+<h6 class="find">Our AI-driven approach delivers measurable results and career transformations.</h6>
+</div>
+<!---three div-->
+<div class="four2">
+<div class="four-box1"><b style="color: purple; font-size: 25px; margin-left: 45px; margin-top: 20px;">₹9 LPA</b><br><span style="font-size: 10px; font-weight: bold; margin-left: 25px; margin-top: 20px;">Average CTC Package</span></div>
+<div class="four-box1"><b style="color: blue; font-size: 25px; margin-left: 45px; margin-top: 20px;">₹15%</b><br><span style="font-size: 10px; font-weight: bold; margin-left: 25px; margin-top: 20px;">Average CTC Package</span></div>
+<div class="four-box1"><b style="color: green; font-size: 25px; margin-left: 35px; margin-top: 20px;">35 Days</b><br><span style="font-size: 10px; font-weight: bold; margin-left: 25px; margin-top: 20px;">Average CTC Package</span></div>
+<div class="four-box1"><b style="color: rgb(210, 91, 173); font-size: 25px; margin-left: 60px; margin-top: 20px;">97%</b><br><span style="font-size: 10px; font-weight: bold; margin-left: 35px; margin-top: 20px;">Average CTC Package</span></div>
+
+
+</div>
+
+<div class="footer-top">
+  <div class="footer-top1"></div>
+<div class="footer-top1"><img src="https://www.niit.com/india/wp-content/uploads/2025/09/niitfoundatinLogonew.webp" height="30px" width="60px"></div>
+<div class="footer-top1"><img src="https://www.niit.com/india/wp-content/uploads/2025/09/niit-mts-logo-1s.png" height="30px" width="60px"></div>
+<div class="footer-top1"><img src="https://www.niit.com/india/wp-content/uploads/2025/09/NU-logOs.png" height="30px" width="60px"></div>
+<div class="footer-top1"><i class="fa-brands fa-facebook-f" style="color: rgb(116, 192, 252);"></i> <i class="fa-brands fa-youtube" style="color: rgb(228, 18, 18);"></i> <i class="fa-brands fa-x-twitter" style="color: rgb(252, 116, 116);"></i> <i class="fa-brands fa-linkedin-in" style="color: rgb(116, 192, 252);"></i></div>
+
+</div>
+<!-- Footer -->
+<div class="footer">
+<div class="footer-items"></div>
+<div class="footer-items"><br><b style="color: white;">About</b><br>Overview<br>Brands<br>Achievement & milestones<br>Board of directors<br>Management<br>Contact us<br><br><b style="color: white;">work with us</b><br>Career<br><br><br><br><br><br><br><br><br><br><br><br><br><b style="color: white;">CyberSecurity</b><br>Cybersecurity with GenAI Advanced Program<br>Swift Cybersecurity for Homemakers<br>Swift Cybersecurity for Senior Citizens<br>Swift Cybersecurity for Finances Online</div>
+<div class="footer-items"><br><b style="color: white;">News</b><br>Press releases<br>Media Kit<br>Video gallery<br>Latest news<br>Blog<br>Awards & acknowledgement<br><br><b style="color: white;">GenAI</b><br>Building Agentic AI Systems<br>Digital Communication and GenAI Tools<br>GenAI Applied Program for No-Code Apps<br>GenAI Applied Program for Practitioners<br>GenAI Spark Program for Educators<br>GenAI Spark Program for Students    <br>GenAI Spark Program on Marketing<br>GenAI Spark Essentials<br>Swift GenAI for Homemakers<br>Swift GenAI for Content Developers<br><br><br><br><b style="color: white;">Cloud Computing</b><br>IT SysAdmin & Cloud Computing Advanced Program</b></div>
+<div class="footer-items"><br><b style="color: white;">Investors</b><br>Press releases<br><br><br><br><br><br><b style="color: white;">Software Engineering</b><br>Full-Stack Development with GenAI Honours Program<br>Front-end Dev with React & GenAI Advanced Program<br>Java Development Certificate Program<br>Java: Object-Oriented Programming<br>SQL Essentials with GenAI<br>Full-Stack Development with GenAI Honours Program [Upgrade from NIIT's Java Development Certificate Program]<br>Full-Stack Development with GenAI Honours Program [Upgrade from NIIT's Front-end Dev with React & GenAI Advanced Program]<br><br><b style="color: white;">Digital Marketing</b><br>Digital Marketing with GenAI Advanced Program<br>SEO and Growth Marketing Specialist<br>Social Media and Influencer Marketing Specialist</div>
+<div class="footer-items"><br><b style="color: white;">Investors</b><br>Press releases<br><br><br><br><br><br><b style="color: white;">Software Engineering</b><br>Full-Stack Development with GenAI Honours Program<br>Front-end Dev with React & GenAI Advanced Program<br>Java Development Certificate Program<br>Java: Object-Oriented Programming<br><br><br><br><br><br><br><br><br><b style="color: white;">gNIIT</b><br>gNIIT Digital<br>HSC Digital Edge Program With Python and GenAI<br><br><br><br><br><br><br><br><br><br><br><br></div>
+</div>
+
+
+<div class="footer-top-1">
+  <div class="footer-top1"></div>
+<div class="footer-top1">Privacy Policy
+</div>
+<div class="footer-top1">
+Terms of use</div>
+<div class="footer-top1"></div>
+<div class="footer-top1">© 2026 NIIT Limited. All rights</div>
+</div>
+<!-- Footer -->
+
 </body>
     <script>
 
@@ -209,12 +314,52 @@ function cou(){
     document.getElementById("formBox").style.display = "block";
 }
 
+  function cont() {
+    document.getElementById("formbox1").style.display = "block";
+}
 
-    </script>
+ function get() {
+    document.getElementById("formbox1").style.display = "none";
+}
+
+
+    
+const tl = gsap.timeline({
+  repeat: -1, // infinite loop
+});
+
+tl.to(".three-box", {
+  x: "-=300",
+  duration: 1,
+  delay: 1
+})
+.to(".three-box", {
+  x: "-=300",
+  duration: 1,
+  delay: 1
+})
+.to(".three-box", {
+  x: "-=300",
+  duration: 1,
+  delay: 1
+});
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".three", {
+  y: 100,
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".three",
+    start: "top 80%",
+    toggleActions: "play none none none"
+  }
+});
+</script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
-
-
-
-
